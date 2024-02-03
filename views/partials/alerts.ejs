@@ -1,0 +1,16 @@
+<% if(locals.isRegistered){ %>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Email Id is already registered</strong> Try using a different Email Id.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <% } else if(locals.notRegistered){ %>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Email Id is not registered</strong> Try using a different Email Id or register yourself first.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <% } else if(locals.passwordMismatch){%>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Incorrect Password</strong> Try using a different password.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <% } %>

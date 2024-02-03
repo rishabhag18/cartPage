@@ -1,0 +1,96 @@
+<div class="d-flex flex-column bd-highlight mb-3 p-5 col-8 ">
+    <div class=" mb-auto p-2 bd-highlight">
+        <h1>LootBazar</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quibusdam beatae quod
+            assumenda? Natus
+            repellendus impedit perferendis cum voluptatibus. Nam a dolorem molestiae quibusdam cum,
+            aliquid alias
+            nesciunt fuga tempore.</p>
+    </div>
+    <div class="d-flex flex-row bd-highlight ">
+        <div class="p-2 bd-highlight">
+            <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                Sign Up
+            </button>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <hr>
+                <div class="offcanvas-body">
+                    <form action="/signUp" method="post">
+                        <div>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name"
+                                    name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email"
+                                    placeholder="name@example.com" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputPassword5" class="form-label">Password</label>
+                                <input type="password" id="inputPassword5" class="form-control"
+                                    aria-describedby="passwordHelpBlock" name="password" required>
+                                <div id="passwordHelpBlock" class="form-text">
+                                    Your password must be 8-20 characters long, contain letters and
+                                    numbers, and
+                                    must
+                                    not contain spaces, special characters, or emoji.
+                                </div>
+                                <input type="submit" value="Register" class="btn btn-secondary mt-4">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="p-2 bd-highlight">
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample2" aria-controls="offcanvasExample2">
+                Login
+            </button>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample2"
+                aria-labelledby="offcanvasExampleLabel2">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel2">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <hr>
+                <div class="offcanvas-body">
+                    <form action="/login" method="post">
+                        <div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email
+                                    address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputPassword5" class="form-label">Password</label>
+                                <input type="password" id="inputPassword5" class="form-control"
+                                    aria-describedby="passwordHelpBlock" name="password" required>
+                                <div id="passwordHelpBlock" class="form-text">
+                                    Your password must be 8-20 characters long, contain letters and
+                                    numbers, and
+                                    must
+                                    not contain spaces, special characters, or emoji.
+                                </div>
+                                <input type="submit" value="Login" class="btn btn-secondary mt-4">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
